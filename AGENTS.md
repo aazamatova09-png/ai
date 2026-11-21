@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+
+- Selection logic lives in pure `src/lib/interior.ts` (catalog, budget parsing, kit building) with tests in `src/lib/interior.test.ts`; keep UI free of pricing rules so a real AI/catalog can replace it later.
+- Photo analysis (`src/lib/photo-analysis.ts`) is browser-only (canvas) and is dynamically imported on submit to stay SSR-safe.
