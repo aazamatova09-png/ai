@@ -1,14 +1,46 @@
-# Welcome to your Lovable project
+# Уютный AI Дизайнер
+
+Создай современное веб-приложение на русском языке для подбора мебели и материалов для ремонта по фото комнаты с помощью ИИ.
+
+Сделай простой, чистый и понятный интерфейс (в светлых тонах), который состоит из 4 шагов на одной странице:
+
+1. Форма ввода (загрузка данных):
+
+- Поле для загрузки фото комнаты (с предпросмотром загруженного фото).
+
+- Поле для ввода бюджета в тенге (например, «300 000 ₸»).
+
+- Выбор желаемого стиля (кнопки или выпадающий список: Скандинавский, Лофт, Минимализм, Современный).
+
+- Поле для комментария: что именно нужно подобрать (например, «нужен диван и напольное покрытие»).
+
+- Яркая кнопка «Подобрать интерьер».
+
+2. Блок анализа фото от ИИ (появляется после нажатия кнопки):
+
+- Краткая карточка, где указано: определённый стиль комнаты, основные цвета (в виде цветных кружков), уровень освещения и примерный размер комнаты.
+
+3. Результаты подбора (2–3 готовых комплекта):
+
+- Карточки с комплектами мебели и материалов.
+
+- Внутри каждого комплекта: список товаров (название, категория, цена в ₸, название магазина, кнопка «Перейти в магазин»), общая сумма комплекта (не выше указанного бюджета) и короткое объяснение от ИИ, почему эти товары подходят к комнате.
+
+4. Перенастройка подборки:
+
+- Под результатами сделай две интерактивные кнопки: «Сделать дешевле» и «Другой стиль / цвет». При нажатии на них подборка должна обновляться и показывать другие варианты.
+
+Пока используй реалистичные тестовые (демо) данные с казахстанскими ценами в тенге, чтобы весь сценарий работал от загрузки фото до обновления подборки. Сделай так, чтобы сайт красиво открывался и на компьютере, и на телефоне.
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/b44f47ad-e8c5-402d-affc-c6edecc88b46).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +52,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
